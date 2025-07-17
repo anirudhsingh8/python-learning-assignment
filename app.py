@@ -1,11 +1,11 @@
 from fastapi import FastAPI, HTTPException
 from starlette import status
-from request_objects.create_session_request import CreateSessionRequest
-from request_objects.create_chat_request import CreateChatRequest
+from dtos.create_session_request import CreateSessionRequest
+from dtos.create_chat_request import CreateChatRequest
 from store.store import SESSION_STORE, CHAT_STORE
 from models.session_model import SessionModel
 from models.chat_model import Role
-from utils.methods import clean_username, get_current_utc_timestamp
+from utils import *
 from typing import Optional
 
 app = FastAPI()
