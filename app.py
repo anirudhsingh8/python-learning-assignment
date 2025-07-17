@@ -1,5 +1,4 @@
-from fastapi import FastAPI, HTTPException
-from starlette import status
+from fastapi import FastAPI, HTTPException, status
 from dtos.create_session_request import CreateSessionRequest
 from dtos.create_chat_request import CreateChatRequest
 from store.store import SESSION_STORE, CHAT_STORE
